@@ -1,0 +1,22 @@
+---
+galaxy_info:
+  author: "Oleksandr Kviatkovskyi"
+  company: DP Prozorro
+  license: Apache
+  min_ansible_version: 2.2
+  platforms:
+  - name: EL
+    versions:
+    - 6
+    - 7
+  - name: Debian
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  categories:
+    - system
+
+dependencies: []
+  # When dependencies are encountered by ansible-galaxy, it will automatically install each dependency to the roles_path. To understand how dependencies are handled during play execution, see Playbook Roles and Include Statements

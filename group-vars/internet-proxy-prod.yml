@@ -1,0 +1,4 @@
+domain:
+  tinyproxy_white_list:
+    - web-site.com
+    - web-site.ua

@@ -1,0 +1,7 @@
+---
+############# INTERNET-PROXY ###############
+- hosts: "internet-proxy-prod"
+  roles:
+   - role: ansible-role-tinyproxy-master
+     become: yes
+

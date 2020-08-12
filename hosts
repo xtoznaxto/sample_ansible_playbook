@@ -1,0 +1,12 @@
+################## INTERNET-PROXY ###########
+[internet-proxy-prod]
+internet-proxy1  ansible_ssh_host=10.4.55.21
+internet-proxy2  ansible_ssh_host=10.4.55.22
+
+
+
+############# ALL-HOSTS ##################
+[prod-all-hosts:children]
+internet-proxy-prod
+
+

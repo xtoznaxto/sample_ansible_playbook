@@ -1,0 +1,23 @@
+---
+- name: Install tinyproxy
+  package:
+    name: tinyproxy
+    state: present
+
+- name: Copy tinyproxy config
+  copy:
+    dest: /etc/tinyproxy/tinyproxy.conf
+    src: tinyproxy.conf
+    mode: 0644
+    owner: root
+  notify: restart tinyproxy
+  tags: config_tinyproxy
+
+- name: Copy tinyproxy white list
+  template:
+    dest: /etc/tinyproxy/filter
+    src: tinyproxy_filter.j2
+    mode: 0644
+    owner: root
+  notify: restart tinyproxy
+  tags: filter_tinyproxy

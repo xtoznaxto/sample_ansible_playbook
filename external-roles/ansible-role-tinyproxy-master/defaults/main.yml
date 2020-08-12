@@ -1,0 +1,5 @@
+---
+domain:
+  tinyproxy_white_list:
+    - some_site1.com
+    - some_site2.ua
